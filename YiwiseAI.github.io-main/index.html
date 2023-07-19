@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.88.1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href=""https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<title>Voice Conversion</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1091.0" data-gr-ext-installed="">
+
+<div class="container" >
+<header role="banner">
+</header>
+<main role="main">
+<article itemscope itemtype="https://schema.org/BlogPosting">
+
+
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+	<h2 id="vctk-samples" style="text-align: center;">柯南的变声器——音色转换</h2>
+	
+		<br>
+<p> 音色转换可以将任意人音色的音频转换成指定人音色的音频。基于开源女生数据展示模型在不同语言，方言，游戏配音中音色转换的效果</p>
+<br>
+<h4 style="text-align: center;">目标人音色</h4>
+<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+			<th style="text-align: center;width: 400px">目标人音色</th>
+			<th style="text-align: center">示例音频</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td style="text-align: center;vertical-align:middle;width: 220px">中文女声</td>
+			<td style="text-align: center">
+				<audio controls="controls" style="width: 400px;"><source src="audio/source/style.wav" autoplay/>Your browser does not support the audio element.</audio>
+			</td>		
+			</tr>
+
+			
+
+			</tbody>
+			</table>
+		</div>
+		<br><br>
+		<br><br>
+		<h4 style="text-align: center;">方言</h4>
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+			<th style="text-align: center">原始音色	</th>
+			<th style="text-align: center">输入音频</th>
+			<th style="text-align: center">输出音频</th>
+			</tr>
+			</thead>
+			<tbody>
+		
+				<td style="text-align: center;vertical-align:middle;width: 220px">天津方言</td>
+				<td style="text-align: center">
+					<audio controls="controls" style="width: 400px;"><source src="audio/source/tianjin.wav" autoplay/>Your browser does not support the audio element.</audio>
+				</td>	
+				<td style="text-align: center">
+					<audio controls="controls" style="width: 400px;"><source src="audio/convert/tianjin.wav" autoplay/>Your browser does not support the audio element.</audio>
+				</td>		
+				</tr>
+	
+				<tr>
+				<td style="text-align: center;vertical-align:middle;width: 220px">山东方言</td>
+				<td style="text-align: center">
+					<audio controls="controls" style="width: 400px;"><source src="audio/source/shandong.wav" autoplay/>Your browser does not support the audio element.</audio>
+				</td>		
+				<td style="text-align: center">
+					<audio controls="controls" style="width: 400px;"><source src="audio/convert/shandong.wav" autoplay/>Your browser does not support the audio element.</audio>
+				</td>
+				</tr>
+
+			</tbody>
+			</table>
+		</div>
+
+
+<br><br>
+		<br><br>
+		<h4 style="text-align: center;">英语</h4>
+<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+				<th style="text-align: center">原始音色</th>
+				<th style="text-align: center">输入音频</th>
+				<th style="text-align: center">输出音频</th>
+			</tr>
+			</thead>
+			<tbody>
+		
+			<td style="text-align: center;vertical-align:middle;width: 220px">英语女生</td>
+			<td style="text-align: center">
+				<audio controls="controls" style="width: 400px;"><source src="audio/source/en_women.wav" autoplay/>Your browser does not support the audio element.</audio>
+			</td>	
+			<td style="text-align: center">
+				<audio controls="controls" style="width: 400px;"><source src="audio/convert/en_women.wav" autoplay/>Your browser does not support the audio element.</audio>
+			</td>		
+			</tr>
+
+			<tr>
+			<td style="text-align: center;vertical-align:middle;width: 220px">英语男生</td>
+			<td style="text-align: center">
+				<audio controls="controls" style="width: 400px;"><source src="audio/source/en_man.wav" autoplay/>Your browser does not support the audio element.</audio>
+			</td>		
+			<td style="text-align: center">
+				<audio controls="controls" style="width: 400px;"><source src="audio/convert/en_man.wav" autoplay/>Your browser does not support the audio element.</audio>
+			</td>
+			</tr>
+
+
+			</tbody>
+			</table>
+		</div>
+
+<br><br>
+		<br><br>
+		<h4 style="text-align: center;">日语</h4>
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+				<th style="text-align: center">原始音色</th>
+				<th style="text-align: center">输入音频</th>
+				<th style="text-align: center">输出音频</th>
+			</tr>
+			</thead>
+			<tbody>
+		
+				<td style="text-align: center;vertical-align:middle;width: 220px">日语女生</td>
+				<td style="text-align: center">
+					<audio controls="controls" style="width: 400px;"><source src="audio/source/ja_women.wav" autoplay/>Your browser does not support the audio element.</audio>
+				</td>	
+				<td style="text-align: center">
+					<audio controls="controls" style="width: 400px;"><source src="audio/convert/ja_women.wav" autoplay/>Your browser does not support the audio element.</audio>
+				</td>		
+				</tr>
+	
+				<tr>
+				<td style="text-align: center;vertical-align:middle;width: 220px">日语男生</td>
+				<td style="text-align: center">
+					<audio controls="controls" style="width: 400px;"><source src="audio/source/ja_man.wav" autoplay/>Your browser does not support the audio element.</audio>
+				</td>		
+				<td style="text-align: center">
+					<audio controls="controls" style="width: 400px;"><source src="audio/convert/ja_man.wav" autoplay/>Your browser does not support the audio element.</audio>
+				</td>
+				</tr>
+
+
+			</tbody>
+			</table>
+		</div>
+<br><br>
+
+		<br><br>
+		<h4 style="text-align: center;">游戏配音</h4>
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+				<th style="text-align: center">原始音色</th>
+				<th style="text-align: center">输入音频</th>
+				<th style="text-align: center">输出音频</th>
+			</tr>
+			</thead>
+			<tbody>
+		
+				<td style="text-align: center;vertical-align:middle;width: 220px">原神（五郎）</td>
+				<td style="text-align: center">
+					<audio controls="controls" style="width: 400px;"><source src="audio/source/wulang.wav" autoplay/>Your browser does not support the audio element.</audio>
+				</td>	
+				<td style="text-align: center">
+					<audio controls="controls" style="width: 400px;"><source src="audio/convert/wulang.wav" autoplay/>Your browser does not support the audio element.</audio>
+				</td>		
+				</tr>
+	
+				<tr>
+				<td style="text-align: center;vertical-align:middle;width: 220px">原神（优菈）</td>
+				<td style="text-align: center">
+					<audio controls="controls" style="width: 400px;"><source src="audio/source/youla.wav" autoplay/>Your browser does not support the audio element.</audio>
+				</td>		
+				<td style="text-align: center">
+					<audio controls="controls" style="width: 400px;"><source src="audio/convert/youla.wav" autoplay/>Your browser does not support the audio element.</audio>
+				</td>
+				</tr>
+
+				<tr>
+					<td style="text-align: center;vertical-align:middle;width: 220px">英雄联盟（赵信）</td>
+					<td style="text-align: center">
+						<audio controls="controls" style="width: 400px;"><source src="audio/source/debang.wav" autoplay/>Your browser does not support the audio element.</audio>
+					</td>		
+					<td style="text-align: center">
+						<audio controls="controls" style="width: 400px;"><source src="audio/convert/debang.wav" autoplay/>Your browser does not support the audio element.</audio>
+					</td>
+					</tr>
+
+			</tbody>
+			</table>
+		</div>
+
+		</div>
+
+
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
+	<h2 id="librispeech-samples" style="text-align: center;">音色转换与视频结合效果</h2>
+	<p>为了展示模型的泛化性，收集了原神中部分游戏角色的配音音频（时长约四十分钟）用于训练模型。从B站下载了数码博主讲解手机的视频并将视频中博主的音色转换成游戏角色的音色。游戏人物为原神中的北斗和托马，示例音频和效果如下：
+	</p>
+	<table class="table table-hover pt-2">
+		<thead>
+		<tr>
+		<th style="text-align: center;width: 400px">目标人音色</th>
+		<th style="text-align: center">示例音频</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td style="text-align: center;vertical-align:middle;width: 220px">托马</td>
+		<td style="text-align: center">
+			<audio controls="controls" style="width: 400px;"><source src="audio/source/tuoma.wav" autoplay/>Your browser does not support the audio element.</audio>
+		</td>		
+		</tr>
+
+		
+
+		</tbody>
+		</table>
+	<div style="width: 1000px;text-align: center;margin:0 auto;">
+ <video  controls="controls" style="width: 900px;">
+  <source src="audio/tuoma.mp4" type="video/mp4">
+</video>
+</div>
+
+	<table class="table table-hover pt-2">
+		<thead>
+		<tr>
+		<th style="text-align: center;width: 400px">目标人音色</th>
+		<th style="text-align: center">示例音频</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+		<td style="text-align: center;vertical-align:middle;width: 220px">北斗</td>
+		<td style="text-align: center">
+			<audio controls="controls" style="width: 400px;"><source src="audio/source/beidou.wav" autoplay/>Your browser does not support the audio element.</audio>
+		</td>		
+		</tr>
+
+		
+
+		</tbody>
+		</table>
+<div style="width: 1000px;text-align: center;margin:0 auto;">
+<video  controls="controls" style="width: 900px;">
+<source src="audio/beidou.mp4" type="video/mp4">
+</video>
+
+</div>
+</div>
+
+
+</article>
+</main>
+</div>
+
+</body>
+</html>
